@@ -27,7 +27,7 @@ var x = setInterval(function () {
 	if (distance < 0) {
 		clearInterval(x);
 		document.getElementById("countdown-box").innerHTML =
-			"<span class='cdi' id='test'><img src='hbd.png'> <br>Happy cake day, sweetie! </span>";
+			"<span class='cdi' id='test'><img src='hbd.png'> <br>May God keep showering his blessings on you. </span>";
 		document.querySelector(".title").innerText = "";
 	
 	}
