@@ -27,9 +27,10 @@ var x = setInterval(function () {
 	if (distance < 0) {
 		clearInterval(x);
 		document.getElementById("countdown-box").innerHTML =
-			//"<span class='cdi' id='test'><img src='hbd.png'> <br>May God keep showering his blessings on you. </span>";
+			// "<span class='cdi' id='test'><img src='hbd.png'> <br>May God keep showering his blessings on you. </span>";
+			window.location.replace("Happy_Birthday.html");
 		document.querySelector(".title").innerText = "";
-	
+
 	}
 }, 1000);
 function addZero(i) {
@@ -47,7 +48,7 @@ function isMobile() {
 }
 
 /********************
-    Animation Frame
+	Animation Frame
   ********************/
 
 window.requestAnimFrame = (function () {
@@ -62,7 +63,7 @@ window.requestAnimFrame = (function () {
 })();
 
 /********************
-    Vars
+	Vars
   ********************/
 var canvas = document.getElementById("canvas"),
 	ctx = canvas.getContext("2d"),
@@ -84,7 +85,7 @@ canvas.width = cw;
 canvas.height = ch;
 
 /********************
-    Helper Functions
+	Helper Functions
   ********************/
 
 function random(min, max) {
@@ -98,7 +99,7 @@ function calculateDistance(p1x, p1y, p2x, p2y) {
 }
 
 /********************
-    Fireworks
+	Fireworks
   ********************/
 function Firework(sx, sy, tx, ty) {
 	// actual coordinates
@@ -180,7 +181,7 @@ Firework.prototype.draw = function () {
 };
 
 /********************
-    Particle Prototype
+	Particle Prototype
   ********************/
 
 function Particle(x, y) {
@@ -248,7 +249,7 @@ function createParticles(x, y) {
 }
 
 /********************
-    Update
+	Update
   ********************/
 
 function update() {
@@ -314,7 +315,7 @@ function onResize() {
 }
 
 /********************
-    Event Listeners
+	Event Listeners
   ********************/
 
 canvas.addEventListener("mousemove", function (e) {
@@ -335,3 +336,5 @@ canvas.addEventListener("mouseup", function (e) {
 window.addEventListener("resize", onResize);
 
 window.onload = update;
+
+
