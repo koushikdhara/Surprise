@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eeaadc;
+}
+
+.birthday-card {
+  text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.img2 {
+  width: 100%;
+  max-height: 200px;
+  object-fit: fill;
+  border-radius: 5px;
+  animation: fadeIn 2s ease infinite;
+}
+
+.img1 {
+  width: 100%;
+  height: 250px;
+  background-color: #dedede;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.img1 img {
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
+
+}
+
+h1 {
+  font-size: 54px;
+  /* color: #333; */
+
+  background: linear-gradient(to right, #ffed24 1%, rgb(197, 55, 218) 18%, #ff0000 99%);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-top: 20px;
+  animation: slideInLeft 1.5s ease infinite;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  animation: slideInRight 1.5s ease infinite;
+}
+.pTag{
+  animation: none;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* button proprtis */
+.btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: left;
+  justify-content: space-between;
+  background: #40B3A2;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+
+/* --------------------------- */
+/* Audio Button */
+.audioBtn {
+  background-color: #fff;
+  border: none;
+}
+
+.audioBtn {
+  padding: 10px 20px;
+  /* text-transform: uppercase; */
+  border-radius: 8px;
+  /* font-size: 17px; */
+  /* font-weight: 500; */
+  /* color: #ffffff80; */
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.audioBtn:hover {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
