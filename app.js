@@ -1,6 +1,6 @@
 // Set date
 var countdownDate = new Date(
-	"January 8, 2024 00:00:00"
+	"April 10, 2024 00:00:00"
 ).getTime(); /* hrs: min: sec */
 
 // Update the count down every 1 second
@@ -27,7 +27,7 @@ var x = setInterval(function () {
 	if (distance < 0) {
 		clearInterval(x);
 		document.getElementById("countdown-box").innerHTML =
-			"<span class='cdi' id='test'><img src='hbd.png'> <br>May God keep showering his blessings on you. </span>";
+			//"<span class='cdi' id='test'><img src='hbd.png'> <br>May God keep showering his blessings on you. </span>";
 		document.querySelector(".title").innerText = "";
 	
 	}
