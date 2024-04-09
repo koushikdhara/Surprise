@@ -9,7 +9,8 @@ body {
 	padding: 0;
 	margin: 0;
 	user-select: none;
-	background-color: #0c1445;
+/* 	background-color: #0c1445; */
+	background-image: -webkit-linear-gradient(-45deg, rgb(90, 197, 255) 0%, rgb(248, 48, 75) 100%);
 }
 canvas {
 	transition: background 2s;
