@@ -28,7 +28,7 @@ var x = setInterval(function () {
 		clearInterval(x);
 		document.getElementById("countdown-box").innerHTML =
 			// "<span class='cdi' id='test'><img src='hbd.png'> <br>May God keep showering his blessings on you. </span>";
-			window.location.replace("Happy_Birthday.html");
+			window.location.replace("Happy_Birthday1.html");
 		document.querySelector(".title").innerText = "";
 
 	}
